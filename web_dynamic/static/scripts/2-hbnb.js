@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $('DIV.amenities H4').text(ns.join(', '));
   });
 });
-$.get('http://0.0.0.0:5001/api/v1/status/', function (data status) {
+$.get('http://0.0.0.0:5001/api/v1/status/', function (data, status) {
     if (status) {
 	$('div').addClass('available');
     } else {
